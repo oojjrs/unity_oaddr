@@ -10,8 +10,8 @@ namespace oojjrs.oaddr
     {
         public interface CallbackInterface
         {
-            void ConfirmDownloadLargeSize(long totalSize, Action onYes, Action onNo);
             void Cancel();
+            void ConfirmDownloadLargeSize(long totalSize, Action onYes, Action onNo);
             void OnComplete();
             void OnStart();
         }
