@@ -49,9 +49,9 @@ namespace oojjrs.oaddr
             }
         }
 
-        public async void Run(int DownloadConfirmSizeMb = 10)
+        public async void Run(CallbackInterface callback, int DownloadConfirmSizeMb = 10)
         {
-            Callback = GetComponent<CallbackInterface>();
+            Callback = callback;
             if (Callback == default)
             {
                 Debug.LogWarning($"{name}> DON'T HAVE CALLBACK FUNCTION.");
